@@ -1,15 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Input v-model="name" />     <!--6.lets use customize input component and try to bind name property(run the code, data doesn't store)
+  7.in this example the v-model directive doesn't know how to behave with custom component.(Next example to change somthing and show the output )-->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Input from './components/custome-v-model1.vue'   //4.included app.vue component
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Input                       //5.then added input component
   }
 }
 </script>
